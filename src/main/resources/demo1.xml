@@ -11,7 +11,7 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
     </bean>-->
 
     <bean id="console2" class="zsh.dbc.practice.bean.Console"
-          init-method="init" destroy-method="destroy">
+          init-method="init" destroy-method="destroy" scope="prototype">
         <property name="name" value="ps3"></property>
         <property name="price" value="199"></property>
         <property name="games">
