@@ -1,10 +1,8 @@
 package zsh.dbc.practice;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import zsh.dbc.practice.bean.Console;
 
-import java.math.BigDecimal;
 
 /**
  * Created by zhengsihan, on 2019-10-18
