@@ -1,9 +1,6 @@
 package zsh.dbc.practice.bean;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +29,7 @@ public class Company {
         this.games = games;
     }
 
-    private List<String> games;// = new ArrayList<>();
+    private List<String> games;
 
     public Company() {
         setGames(new ArrayList<String>());

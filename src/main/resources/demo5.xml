@@ -11,6 +11,5 @@ http://www.springframework.org/schema/aop
 http://www.springframework.org/schema/aop/spring-aop.xsd
 ">
 
-    <context:component-scan base-package="zsh.dbc.practice" />
-    <aop:aspectj-autoproxy/>
+
 </beans>

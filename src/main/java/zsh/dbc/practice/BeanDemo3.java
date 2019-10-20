@@ -3,7 +3,6 @@ package zsh.dbc.practice;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import zsh.dbc.practice.bean.Company;
 
 import java.util.ArrayList;
