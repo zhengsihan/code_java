@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component("logAspect")
-public class LogAspect {
-    @Pointcut("execution (* zsh.dbc.practice.*.*(..))")
+public class LogAspect_Annotation {
+    @Pointcut("execution (* zsh.dbc.practice.service.LogService.sayHi(..))")
     private void anyOldTransfer(){}
 
     @Before("anyOldTransfer()")
