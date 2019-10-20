@@ -1,9 +1,11 @@
-package zsh.dbc.practice.bean;
+package zsh.dbc.practice.impl;
+
+import zsh.dbc.practice.service.DBOService;
 
 /**
  * Created by zhengsihan, on 2019-10-18
  */
-public class Target1 implements DBOImpl{
+public class DBOImpl implements DBOService {
     public void save(){
         System.out.println("invoke save...");
     }

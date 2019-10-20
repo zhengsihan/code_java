@@ -7,11 +7,11 @@ https://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/aop
 http://www.springframework.org/schema/aop/spring-aop.xsd
 ">
-    <bean id="target" class="zsh.dbc.practice.bean.Target1" />
-    <bean id="advice1" class="zsh.dbc.practice.bean.Advice1" />
+    <bean id="target" class="zsh.dbc.practice.impl.DBOImpl" />
+    <bean id="advice1" class="zsh.dbc.practice.aspect.LogAspect_SchemaBased" />
 
     <aop:config>
-        <aop:pointcut id="pointcut1" expression="execution(* zsh.dbc.practice.bean.DBOImpl.save(..))" />
+        <aop:pointcut id="pointcut1" expression="execution(* zsh.dbc.practice.service.DBOService.save(..))" />
         <aop:aspect ref="advice1">
             <aop:before pointcut-ref="pointcut1" method="log"/>
             <aop:after pointcut-ref="pointcut1" method="log" />

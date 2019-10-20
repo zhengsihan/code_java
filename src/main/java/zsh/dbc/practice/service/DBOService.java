@@ -1,9 +1,9 @@
-package zsh.dbc.practice.bean;
+package zsh.dbc.practice.service;
 
 /**
  * Created by zhengsihan, on 2019-10-18
  */
-public interface DBOImpl {
+public interface DBOService {
     public void save();
     public void delete();
     public void update();
