@@ -1,17 +1,13 @@
-package org.minus.prac2;
+package org.minus.quartz_prac;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("org.minus.prac2.dao")
 @EnableScheduling
-public class Prac2Application {
-
+public class QuartzPracApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Prac2Application.class, args);
+        SpringApplication.run(QuartzPracApplication.class, args);
     }
-
 }
