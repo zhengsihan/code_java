@@ -3,11 +3,13 @@ package org.minus.junit_prac.p1;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
+
+import static java.lang.Thread.sleep;
 
 /**
  * Created by zhengsihan, on 2019-11-13
@@ -29,7 +31,9 @@ class CalculatorTest2 {
 
     @DisplayName("T_T")
     @RepeatedTest(9)
-    void addTest() {
+    @Timeout(value = 5, unit = TimeUnit.MILLISECONDS)
+    void addTest() throws InterruptedException {
+        sleep(1000);
         int result = c.add(a, b);
         Assertions.assertEquals(result, a + b);
         a++;
@@ -41,9 +45,11 @@ class CalculatorTest2 {
      * @param x
      */
     @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3})
+    @ValueSource(ints = {1, 2, 3})//short,byte,int,long,float,double,char,boolean,java.lang.String,java.lang.Class
     @DisplayName("singleParam")
-    void func1(int x) {
+    @Timeout(5)
+    void func1(int x) throws InterruptedException {
+        sleep(200);
         int result = c.add(x, b);
         Assertions.assertEquals(result, x + b);
     }
