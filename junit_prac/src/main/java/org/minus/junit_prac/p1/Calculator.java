@@ -1,7 +1,5 @@
 package org.minus.junit_prac.p1;
 
-import org.junit.Test;
-
 /**
  * Created by zhengsihan, on 2019-11-10
  * 基础类，用于测试
