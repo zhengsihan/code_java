@@ -42,7 +42,7 @@
         </dependency>
         <dependency>
             <groupId>org.minus</groupId>
-            <artifactId>mq_producer_prac</artifactId>
+            <artifactId>rq_producer</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
