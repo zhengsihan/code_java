@@ -4,9 +4,6 @@ import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * Created by zhengsihan, on 2019-10-29
- */
 @Configuration
 public class TestQuartzConfig {
     @Bean

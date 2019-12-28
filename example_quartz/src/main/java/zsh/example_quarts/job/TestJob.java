@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by zhengsihan, on 2019-10-29
- */
 @Component
 public class TestJob {
 
