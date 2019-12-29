@@ -1,4 +1,4 @@
-package zsh.spring_func.prac_annotation_primary;
+package zsh.spring_func.example_anno_primary;
 
 import org.springframework.stereotype.Component;
 
