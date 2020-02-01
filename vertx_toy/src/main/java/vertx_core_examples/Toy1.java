@@ -2,9 +2,7 @@ package vertx_core_examples;
 
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
-import io.vertx.core.WorkerExecutor;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.json.Json;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.net.NetServer;
 
