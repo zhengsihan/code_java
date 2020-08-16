@@ -1,4 +1,4 @@
-package others;
+package lambda.p1;
 
 public class OneWhoSeeSwimming {
     public String swim(String str) {
