@@ -1,6 +1,12 @@
 package basic
 
+/**
+ * 基础语法练习
+ */
 class T1(val name: String){
+    var age: String = name
+        get() = "$field is here"
+
     init {
         println("T1 object created!")
     }
@@ -9,8 +15,13 @@ class T1(val name: String){
     }
 }
 fun main() {
-    f11()
+    f12()
 //    println(f8("zsh"))
+}
+
+fun f12() {
+    var t = T1("hello")
+    println(t.age)
 }
 
 fun f11() {
